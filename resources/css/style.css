@@ -1,0 +1,94 @@
+html{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    position: relative;
+    top: 4rem; /* To offset for fixed header. */
+}
+.center{
+    text-align: center;
+}
+
+.image-container{
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.icon{
+    height: 2.5rem;
+}
+
+/* header */
+header{
+    height: 4rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+}
+
+header .content {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    padding:0.75rem 1.5rem;
+}
+  
+header .logo {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex: 1;
+    color: gray;
+    align-items: center;
+}
+
+header .logo #Colmar{
+    font-weight: 900;
+    color: black;
+}
+  
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    padding-left: 1rem;
+}
+
+/* Mobile Header */
+@media only screen and (max-width: 700px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+
+    header .mobile li{
+        height: 2.5rem;
+    }
+}
